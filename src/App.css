@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+/*--------------------LO QUE AÑADIMOS NOSOTROS-------------------------*/
+
+nav {
+  background-color: #fff;
+  padding: 10px;
+}
