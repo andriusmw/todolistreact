@@ -4,6 +4,9 @@ import logo from './logo.svg';
 import './App.css';
 import Navigation  from './components/navigation';
 
+import { todos } from "./todos.json";
+console.log(todos);
+
   // eslint-disable-next-line jsx-a11y/anchor-is-valid
 function App() {
   return (
