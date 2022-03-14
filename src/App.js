@@ -2,19 +2,15 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import logo from './logo.svg';
 import './App.css';
-
+import Navigation  from './components/navigation';
 
   // eslint-disable-next-line jsx-a11y/anchor-is-valid
 function App() {
   return (
     <div className="App">
-      <nav className="navbar navbar-dark bg-dark">
-      
-        <a href="" className="text-white">
-            Tasks
-        </a>
 
-      </nav>
+      <Navigation></Navigation>
+
         <img src={logo} className="App-logo" alt="logo" />
     </div>
   );
