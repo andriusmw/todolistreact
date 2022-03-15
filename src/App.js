@@ -3,17 +3,16 @@
 import logo from './logo.svg';
 import './App.css';
 import Navigation  from './components/navigation';
+import { Component } from 'react';
 
 
 
 import todos  from "./todos.json";
-console.log(todos);
-//Mirar de Downgradear a React 16 para que no de error al llamar a los imports de json
-
-  // eslint-disable-next-line jsx-a11y/anchor-is-valid
-
+  class App extends Component {
+   
   
-function App() {
+
+render() {
   return (
     <div className="App">
 
@@ -23,5 +22,5 @@ function App() {
     </div>
   );
 }
-
+}
 export default App;
