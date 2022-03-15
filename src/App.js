@@ -25,7 +25,7 @@ render() {
     //console.log(this.state.todos)
   const todos = this.state.todos.map((todo, i) => {
       return(
-        <div className="card" key={todo.title}>
+        <div className="card" key={todo}>
           
           <div className="card-header">
               <h3> {todo.title} </h3>
