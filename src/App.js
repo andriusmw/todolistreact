@@ -5,9 +5,9 @@ import './App.css';
 import Navigation  from './components/navigation';
 import { Component } from 'react';
 
-
-
 import todos  from "./todos.json";
+
+
   class App extends Component {
    
     constructor() {
@@ -15,6 +15,7 @@ import todos  from "./todos.json";
       this.state = {
        todos: [todos]
       }
+      //Creo que esto está vaciando el array... y por eso no sale nada en las tarjetas
 
       
     }
@@ -22,8 +23,8 @@ import todos  from "./todos.json";
 render() {
 
   //console.log("antes de renderizar el componente navigation");
-    //console.log(this.state.todos)
-  const todos = this.state.todos.map((todo, i) => {
+    console.log(this.state.todos)
+  const Todos = this.state.todos.map((todo, i) => {
       return(
         <div className="card" key={todo}>
           
@@ -44,7 +45,7 @@ render() {
 
         <img src={logo} className="App-logo" alt="logo" />
 
-        {todos}
+        {Todos}
     </div>
   );
 }
