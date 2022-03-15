@@ -10,9 +10,18 @@ import { Component } from 'react';
 import todos  from "./todos.json";
   class App extends Component {
    
-  
+    constructor() {
+      super();
+      this.state = {
+       todos: todos
+      }
+    }
 
 render() {
+
+  //console.log("antes de renderizar el componente navigation");
+    console.log(this.state.todos);
+
   return (
     <div className="App">
 
