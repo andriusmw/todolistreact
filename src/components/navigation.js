@@ -10,7 +10,7 @@ class Navigation extends Component {
             <nav className="navbar navbar-dark bg-dark">
       
             <a href="" className="text-white">
-               {this.state.title}
+               tasks
             </a>
     
           </nav>
