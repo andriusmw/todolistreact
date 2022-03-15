@@ -13,14 +13,29 @@ import todos  from "./todos.json";
     constructor() {
       super();
       this.state = {
-       todos: todos
+       todos: [todos]
       }
+
+      
     }
 
 render() {
 
   //console.log("antes de renderizar el componente navigation");
-    console.log(this.state.todos);
+    //console.log(this.state.todos)
+  const todos = this.state.todos.map((todo, i) => {
+      return(
+        <div className="card" key={todo.title}>
+          
+          <div className="card-header">
+              <h3> {todo.title} </h3>
+          </div>
+          <div className="card-body">
+                <p>{todo.description} </p>
+            </div>
+          </div>
+      )
+    })
 
   return (
     <div className="App">
@@ -28,6 +43,8 @@ render() {
       <Navigation></Navigation>
 
         <img src={logo} className="App-logo" alt="logo" />
+
+        {todos}
     </div>
   );
 }
