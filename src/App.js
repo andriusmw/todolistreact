@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* eslint-disable react/jsx-no-comment-textnodes */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import logo from './logo.svg';
@@ -11,7 +12,15 @@ console.log(todos);
 //Mirar de Downgradear a React 16 para que no de error al llamar a los imports de json
 
   // eslint-disable-next-line jsx-a11y/anchor-is-valid
-function App() {
+    class App extends Component {
+      constructor(){
+        super();
+        this.state = {
+          title: "Aplicacion de Tareas",
+          ntareas: 10
+        }
+      }
+       render()     {
   return (
     <div className="App">
 
@@ -21,5 +30,5 @@ function App() {
     </div>
   );
 }
-
+}
 export default App;
